@@ -21,7 +21,7 @@ export const ThemeSection = () => {
   return (
     <div className='absolute right-0 t-0'>
          <div className="flex flex-col">
-        <button onClick={handleClick} className='efecto_lis cursor-pointer p-3'>
+        <button onClick={handleClick} className='efecto_lis_texto cursor-pointer p-3'>
           {mode == 'dark' ? <Image src="/moon.svg" className="invert" alt="" width={24} height={24} /> : <Image src="/sun.svg"  alt="" width={24} height={24} />}
         </button>
       </div>

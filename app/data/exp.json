@@ -1,0 +1,84 @@
+[
+  {
+    "name_project": "TrayGo",
+    "description": "Aplicación móvil para la envío de alimentos y gestión de negocios registrados por el cliente.",
+    "image": "/images/traygo.png",
+    "tecnologies": [
+      { "icon": "/icons/react.svg", "name": "React Native" },
+      { "icon": "/icons/ts.svg", "name": "Typescript" },
+      { "icon": "/icons/expo.svg", "name": "Expo" },
+      { "icon": "/icons/googlemaps.svg", "name": "API Google Maps" },
+      { "icon": "/icons/supabase.svg", "name": "Supabase" }
+    ],
+    "link": "",
+    "github_link": "",
+    "information": [
+      {
+        "puesto": "Mobile Developer",
+        "name": "TrayGo",
+        "dates": "Nov 2025 - Dic 2025",
+        "description": [
+          "Desarrollo de aplicación móvil para la solicitud de alimentos y bebidas a restaurantes registrados.",
+          "Implementación de API de Google Maps.",
+          "Formularios seguros para el registro y gestión de negocios."
+        ]
+      }
+    ]
+  },
+  {
+    "name_project": "Ilyrox",
+    "description": "Aplicación web diseñada para la visualización de inmobiliarias en México.",
+    "image": "/images/ilyrox.png",
+    "tecnologies": [
+      { "icon": "/icons/react.svg", "name": "ReactJS" },
+      { "icon": "/icons/ts.svg", "name": "Typescript" },
+      { "icon": "/icons/zustand.svg", "name": "Zustand" },
+      { "icon": "/icons/tailwind.svg", "name": "TailwindCSS" },
+      { "icon": "/icons/framer.svg", "name": "Framer Motion" },
+      { "icon": "/icons/googlemaps.svg", "name": "API Google Maps" },
+      { "icon": "/icons/supabase.svg", "name": "Supabase" },
+      { "icon": "/icons/postgresql.svg", "name": "PostgreSQL" }
+    ],
+    "link": "https://ilyrox.com",
+    "github_link": "",
+    "information": [
+      {
+        "puesto": "FullStack Developer",
+        "name": "Ilyrox",
+        "dates": "Ene 2026 - Mar 2026",
+        "description": [
+          "Diseñé toda la interfaz de usuario de la plataforma con más de 15 componentes reutilizables.",
+          "Búsqueda geoespacial con Google Maps API.",
+          "Optimización de estado global (Zustand) para eliminar re-renders.",
+          "Diseñé y rehutilicé funciones de filtrado de Supabase y PostgreSQL, mejorando el rendimiento en la carga."
+        ]
+      }
+    ]
+  },
+  {
+    "name_project": "Ilyrox Movil",
+    "description": "Aplicación movil diseñada para la gestión de publicaciones, reels y propiedades de inmobiliarias.",
+    "image": "/images/ilyrox.png",
+    "tecnologies": [
+      { "icon": "/icons/react.svg", "name": "React Native" },
+      { "icon": "/icons/ts.svg", "name": "Typescript" },
+      { "icon": "/icons/expo.svg", "name": "Expo" },
+      { "icon": "/icons/googlemaps.svg", "name": "API Google Maps" },
+      { "icon": "/icons/supabase.svg", "name": "Supabase" }
+    ],
+    "link": "",
+    "github_link": "",
+    "information": [
+      {
+        "puesto": "FullStack Developer",
+        "name": "Ilyrox Movil",
+        "dates": "Dic 2025 - Mar 2026",
+        "description": [
+          "Migración a React Native; desarrollo de red social inmobiliaria (posts/reels).",
+          "Implementación de API de Google Maps para geolocalización, formularios seguros y mensajería RealTime con Supabase.",
+          "Optimización de rendimiento (scroll infinito, carga de datos) en un 80%."
+        ]
+      }
+    ]
+  }
+]

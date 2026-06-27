@@ -1,0 +1,49 @@
+[
+  {
+    "name": "Gestión de Citas Médicas",
+    "description": "Aplicación web para la gestión de citas médicas, diseñada para trabajo de grado universitario, dedicado a un hospital público.",
+    "tecnologies": [
+      { "icon": "/icons/react.svg", "name": "ReactJS" },
+      { "icon": "/icons/tailwind.svg", "name": "TailwindCSS" },
+      { "icon": "/icons/ts.svg", "name": "Typescript" },
+      { "icon": "/icons/nodejs.svg", "name": "Node.js" },
+      { "icon": "/icons/express.svg", "name": "Express" },
+      { "icon": "/icon/sockets.svg", "name": "WebSockets" },
+      { "icon": "/icons/postgresql.svg", "name": "PostgreSQL" }
+    ],
+    "github_link": "",
+    "information": [
+      {
+        "puesto": "FullStack Developer",
+        "name": "Gestión de Citas Médicas",
+        "dates": "Feb 2025 - Oct 2025",
+        "description": [
+          "Diseñé la arquitectura del proyecto, tanto del lado del cliente como del servidor, implementando patrones de diseño para escalabilidad.",
+          "Desarrollé la interfaz de usuario de aplicación web para la gestión de citas médicas, implementando diseños responsivos y atractivos.",
+          "Creación de API REST con Express.js, implementando autenticación segura con JWT.",
+          "Implementación de WebSockets para notificaciones en tiempo real.",
+          "Diseño e implementación de base de datos con PostgreSQL, implementando relaciones y validaciones."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Gecim",
+    "description": "Mejora del software desarrollado para un hospital público, generalizando clinicas y consultorios, a la vez implementado la gestión de citas.",
+    "tecnologies": [
+      { "icon": "/icons/react.svg", "name": "ReactJS" },
+      { "icon": "/icons/nextjs.svg", "name": "Next.js" },
+      { "icon": "/icons/tailwind.svg", "name": "TailwindCSS" },
+      { "icon": "/icons/ts.svg", "name": "Typescript" }
+    ],
+    "github_link": "",
+    "information": [
+      {
+        "puesto": "FullStack Developer",
+        "name": "Gecim",
+        "dates": "May 2026 - Act.",
+        "description": []
+      }
+    ]
+  }
+]
