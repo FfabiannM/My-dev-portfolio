@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Fabyan - Portafolio Personal
 
-## Getting Started
+Este es el repositorio de mi portafolio personal, construido con tecnologías modernas para ofrecer un rendimiento óptimo y una experiencia de usuario fluida, con soporte bilingüe (Español/Inglés) y un diseño adaptable (modo claro/oscuro).
 
-First, run the development server:
+## Características principales
+
+- **Bilingüe:** Soporte nativo para Español e Inglés gestionado globalmente.
+- **Modos de Tema:** Cambia fácilmente entre un diseño de tema claro y oscuro, con persistencia.
+- **Tecnologías Modernas:** Construido con [Next.js](https://nextjs.org), React y [Tailwind CSS](https://tailwindcss.com) para los estilos.
+- **Estado Global:** Uso de [Zustand](https://github.com/pmndrs/zustand) para la gestión del estado (idioma y temas).
+- **Diseño Responsivo & Animado:** Adaptado para móviles y computadoras de escritorio, con microinteracciones y efectos modernos.
+- **Formulario de Contacto:** Validación en cliente y redirección mediante `mailto:` para envíos rápidos sin backend.
+
+## Desarrollo Local
+
+Primero, instala las dependencias y ejecuta el servidor de desarrollo:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abre [http://localhost:3000](http://localhost:3000) con tu navegador para ver el resultado.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Puedes empezar a editar la página modificando componentes dentro de `app/components/`.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Despliegue en Vercel
 
-## Learn More
+La forma más rápida y recomendada de desplegar esta aplicación es utilizando [Vercel](https://vercel.com/), plataforma de los creadores de Next.js.
 
-To learn more about Next.js, take a look at the following resources:
+### Pasos para desplegar:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. **Subir a GitHub:** Asegúrate de que todos los cambios estén subidos (push) a tu repositorio de GitHub.
+2. **Iniciar sesión en Vercel:** Ve a [vercel.com](https://vercel.com/) e inicia sesión con tu cuenta de GitHub.
+3. **Importar Proyecto:**
+   - En el panel de Vercel (Dashboard), haz clic en **"Add New..."** y luego en **"Project"**.
+   - Autoriza a Vercel para acceder a tus repositorios y selecciona este repositorio.
+4. **Configuración de Despliegue:**
+   - Vercel detectará automáticamente que es un proyecto de Next.js.
+   - Puedes dejar todas las configuraciones por defecto (Build command: `npm run build`, Output directory: `.next`).
+   - Haz clic en **"Deploy"**.
+5. **¡Listo!** En pocos minutos, tu aplicación estará disponible globalmente en una URL segura (`.vercel.app`).
+   - A partir de ahora, cada vez que hagas un `git push` a la rama `main`, Vercel desplegará automáticamente la nueva versión.
