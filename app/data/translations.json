@@ -1,0 +1,52 @@
+[
+  {
+    "es": {
+      "greeting": "Hola soy",
+      "sub_1": "Informático y desarrollador de software.",
+      "sub_2": "React, React Native, Next.js. Construyo aplicaciones Web y Móvil.",
+      "view_cv": "Ver currículum",
+      "experience_title": "Experiencia",
+      "experience_subtitle": "Experiencia adquirida al realizar proyectos reales.",
+      "projects_title": "Mis proyectos",
+      "about_me_title": "Sobre mí",
+      "about_me_text": {
+        "text1": "Egresado de la",
+        "text2": "en la carrera de",
+        "text3": "Técnico Superior en Informática",
+        "text4": "Desarrollador Fullstack con experiencia en el desarrollo de aplicaciones web y móviles. Construyo productos digitales centrados en el usuario desde el esquema de base de datos hasta el deploy en Frontend.",
+        "text5": "Me gusta desarrollar productos digitales que sean escalables, mantenibles y que satisfagan las necesidades de los usuarios. Por ello, siempre trato de mantener los códigos limpios y legibles. Si necesitas a alguien que automatice tareas, optimice procesos o digitalice su negocio, no dudes en contactarme."
+      },
+      "contact_me_title": "Contáctame",
+      "contact_subtitle": "Abierto a nuevas oportunidades para desarrollar, colaborar, innovar y crecer profesionalmente. Enviame un mensaje :D",
+      "send": "Enviar",
+      "name": "Tu nombre",
+      "email": "Correo",
+      "message": "Mensaje",
+      "find_me_by": "O encuéntrame por"
+    },
+    "en": {
+      "greeting": "Hello, I'm",
+      "sub_1": "Computer scientist and software developer.",
+      "sub_2": "React, React Native, Next.js. I build web and mobile applications.",
+      "view_cv": "View resume",
+      "experience_title": "Experience",
+      "experience_subtitle": "Experience gained from working on real projects.",
+      "projects_title": "My projects",
+      "about_me_title": "About me",
+      "about_me_text": {
+        "text1": "Graduate of",
+        "text2": "with a degree in",
+        "text3": "Advanced Technician in Computer Science",
+        "text4": "Full-stack developer with experience in web and mobile application development. I build user-centered digital products from the database schema to frontend deployment.",
+        "text5": "I enjoy developing scalable digital products, maintainable and that meet user needs. That's why I always try to keep the code clean and readable. If you need someone to automate tasks, optimize processes, or digitize your business, don't hesitate to contact me."
+      },
+      "contact_me_title": "Contact me",
+      "contact_subtitle": "Open to new opportunities to develop, collaborate, innovate, and grow professionally. Send me a message :D",
+      "send": "Send",
+      "name": "Your name",
+      "email": "Email",
+      "message": "Message",
+      "find_me_by": "Or find me by"
+    }
+  }
+]

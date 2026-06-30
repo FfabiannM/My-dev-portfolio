@@ -1,35 +1,48 @@
 [
   {
-    "name": "Gestión de Citas Médicas",
-    "description": "Aplicación web para la gestión de citas médicas, diseñada para trabajo de grado universitario, dedicado a un hospital público.",
+    "name_es": "Gestión de Citas Médicas",
+    "name_en": "Medical Appointment Management",
+    "description_es": "Aplicación web para la gestión de citas médicas, diseñada para trabajo de grado universitario, dedicado a un hospital público.",
+    "description_en": "Web application for the management of medical appointments, designed for university degree work, dedicated to a public hospital.",
     "tecnologies": [
       { "icon": "/icons/react.svg", "name": "ReactJS" },
       { "icon": "/icons/tailwind.svg", "name": "TailwindCSS" },
       { "icon": "/icons/ts.svg", "name": "Typescript" },
       { "icon": "/icons/nodejs.svg", "name": "Node.js" },
       { "icon": "/icons/express.svg", "name": "Express" },
-      { "icon": "/icon/sockets.svg", "name": "WebSockets" },
+      { "icon": "/icons/sockets.svg", "name": "WebSockets" },
       { "icon": "/icons/postgresql.svg", "name": "PostgreSQL" }
     ],
     "github_link": "",
     "information": [
       {
-        "puesto": "FullStack Developer",
+        "position_es": "Desarrollador FullStack",
+        "position_en": "FullStack Developer",
+
         "name": "Gestión de Citas Médicas",
         "dates": "Feb 2025 - Oct 2025",
-        "description": [
+        "description_es": [
           "Diseñé la arquitectura del proyecto, tanto del lado del cliente como del servidor, implementando patrones de diseño para escalabilidad.",
           "Desarrollé la interfaz de usuario de aplicación web para la gestión de citas médicas, implementando diseños responsivos y atractivos.",
           "Creación de API REST con Express.js, implementando autenticación segura con JWT.",
           "Implementación de WebSockets para notificaciones en tiempo real.",
           "Diseño e implementación de base de datos con PostgreSQL, implementando relaciones y validaciones."
+        ],
+        "description_en": [
+          "I designed the project architecture, both client-side and server-side, implementing design patterns for scalability.",
+          "I developed the user interface for a web application for managing medical appointments, implementing responsive and attractive designs.",
+          "I created a REST API with Express.js, implementing secure authentication with JWT.",
+          "I implemented WebSockets for real-time notifications.",
+          "I designed and implemented a database with PostgreSQL, implementing relationships and validations."
         ]
       }
     ]
   },
   {
-    "name": "Gecim",
-    "description": "Mejora del software desarrollado para un hospital público, generalizando clinicas y consultorios, a la vez implementado la gestión de citas.",
+    "name_es": "Gecim",
+    "name_en": "Gecim",
+    "description_es": "Mejora del software desarrollado para un hospital público, generalizando clinicas y consultorios, a la vez implementado la gestión de citas.",
+    "description_en": "Improvement of the software developed for a public hospital, generalizing it to clinics and consulting rooms, while also implementing appointment management.",
     "tecnologies": [
       { "icon": "/icons/react.svg", "name": "ReactJS" },
       { "icon": "/icons/nextjs.svg", "name": "Next.js" },

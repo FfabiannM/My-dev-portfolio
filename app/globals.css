@@ -1,9 +1,25 @@
 @import "tailwindcss";
 @custom-variant dark (&:is(.dark *));
+@import 'tailwind-animations';
+
 
 :root {
   --background_white: #eaeaea;
   --background_black: #171717;
+  /* Accent colors for navigation sections (light mode) */
+  --accent-home: #f0f4f8;
+  --accent-experiencia: #f0f8f4;
+  --accent-sobre-mi: #f8f0f4;
+  --accent-contacto: #f4f0f8;
+  /* Accent colors for dark mode */
+  --accent-home-dark: #2d3748;
+  --accent-experiencia-dark: #2d3748;
+  --accent-sobre-mi-dark: #2d3748;
+  --accent-contacto-dark: #2d3748;
+}
+
+textarea{
+  resize: none;
 }
 
 @theme inline {
@@ -18,6 +34,10 @@
     --background: #0a0a0a;
     --foreground: #ededed;
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -56,7 +76,6 @@ body {
 /* Efecto original que se activa en hover con transición de opacidad (para componentes/cuadros) */
 .efecto_lis {
   position: relative;
-  background: transparent;
 }
 
 .efecto_lis::after {
@@ -159,6 +178,32 @@ body {
 .icon-svg {
   color: #1e2939;
   transition: filter 0.3s ease;
+}
+
+/* Input and button utility classes */
+.input {
+  @apply w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-400 dark:border-gray-600 dark:focus:ring-gray-500;
+}
+.btn-primary {
+  @apply bg-gray-800 text-gray-200 py-2 px-4 rounded-md hover:bg-gray-700 transition;
+}
+
+/* Accent background for active nav items */
+.bg-accent-home { background-color: var(--accent-home); }
+.bg-accent-experiencia { background-color: var(--accent-experiencia); }
+.bg-accent-sobre-mi { background-color: var(--accent-sobre-mi); }
+.bg-accent-contacto { background-color: var(--accent-contacto); }
+.dark .bg-accent-home { background-color: var(--accent-home-dark); }
+.dark .bg-accent-experiencia { background-color: var(--accent-experiencia-dark); }
+.dark .bg-accent-sobre-mi { background-color: var(--accent-sobre-mi-dark); }
+.dark .bg-accent-contacto { background-color: var(--accent-contacto-dark); }
+
+.round-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 1rem;
 }
 
 .dark .icon-svg {

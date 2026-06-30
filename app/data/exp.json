@@ -1,7 +1,8 @@
 [
   {
     "name_project": "TrayGo",
-    "description": "Aplicación móvil para la envío de alimentos y gestión de negocios registrados por el cliente.",
+    "description_es": "Aplicación móvil para la envío de alimentos y gestión de negocios registrados por el cliente.",
+    "description_en": "Mobile application for food delivery and management of businesses registered by the customer.",
     "image": "/images/traygo.png",
     "tecnologies": [
       { "icon": "/icons/react.svg", "name": "React Native" },
@@ -14,20 +15,28 @@
     "github_link": "",
     "information": [
       {
-        "puesto": "Mobile Developer",
+        "position_es": "Desarrollador Móvil",
+        "position_en": "Mobile Developer",
         "name": "TrayGo",
-        "dates": "Nov 2025 - Dic 2025",
-        "description": [
+        "dates_es": "Nov 2025 - Dic 2025",
+        "dates_en": "Nov 2025 - Dec 2025",
+        "description_es": [
           "Desarrollo de aplicación móvil para la solicitud de alimentos y bebidas a restaurantes registrados.",
           "Implementación de API de Google Maps.",
           "Formularios seguros para el registro y gestión de negocios."
+        ],
+        "description_en": [
+          "Development of a mobile application for ordering food and beverages from registered restaurants.",
+          "Implementation of Google Maps API.",
+          "Secure forms for business registration and management."
         ]
       }
     ]
   },
   {
     "name_project": "Ilyrox",
-    "description": "Aplicación web diseñada para la visualización de inmobiliarias en México.",
+    "description_es": "Aplicación web diseñada para la visualización de inmobiliarias en México.",
+    "description_en": "Web application designed for the visualization of real estate agencies in Mexico.",
     "image": "/images/ilyrox.png",
     "tecnologies": [
       { "icon": "/icons/react.svg", "name": "ReactJS" },
@@ -43,40 +52,57 @@
     "github_link": "",
     "information": [
       {
-        "puesto": "FullStack Developer",
+        "position_es": "Desarrollador FullStack",
+        "position_en": "FullStack Developer",
         "name": "Ilyrox",
-        "dates": "Ene 2026 - Mar 2026",
-        "description": [
+        "dates_es": "Ene 2026 - Mar 2026",
+        "dates_en": "Jan 2026 - Mar 2026",
+        "description_es": [
           "Diseñé toda la interfaz de usuario de la plataforma con más de 15 componentes reutilizables.",
           "Búsqueda geoespacial con Google Maps API.",
           "Optimización de estado global (Zustand) para eliminar re-renders.",
           "Diseñé y rehutilicé funciones de filtrado de Supabase y PostgreSQL, mejorando el rendimiento en la carga."
+        ],
+        "description_en": [
+          "I designed the entire platform's user interface with over 15 reusable components.",
+          "Geospatial search using the Google Maps API.",
+          "Global state optimization (Zustan) to eliminate re-renders.",
+          "I designed and repurposed filtering functions from Supabase and PostgreSQL, improving load performance."
         ]
       }
     ]
   },
   {
     "name_project": "Ilyrox Movil",
-    "description": "Aplicación movil diseñada para la gestión de publicaciones, reels y propiedades de inmobiliarias.",
+    "description_es": "Aplicación movil diseñada para la gestión de publicaciones, reels y propiedades de inmobiliarias.",
+    "description_en": "Mobile application designed for the management of publications, reels and properties of real estate agencies.",
     "image": "/images/ilyrox.png",
     "tecnologies": [
       { "icon": "/icons/react.svg", "name": "React Native" },
       { "icon": "/icons/ts.svg", "name": "Typescript" },
       { "icon": "/icons/expo.svg", "name": "Expo" },
       { "icon": "/icons/googlemaps.svg", "name": "API Google Maps" },
-      { "icon": "/icons/supabase.svg", "name": "Supabase" }
+      { "icon": "/icons/supabase.svg", "name": "Supabase" },
+      { "icon": "/icons/postgresql.svg", "name": "PostgreSQL" }
     ],
     "link": "",
     "github_link": "",
     "information": [
       {
-        "puesto": "FullStack Developer",
+        "position_es": "FullStack Developer",
+        "position_en": "FullStack Developer",
         "name": "Ilyrox Movil",
-        "dates": "Dic 2025 - Mar 2026",
-        "description": [
+        "dates_es": "Dic 2025 - Mar 2026",
+        "dates_en": "Dic 2025 - Mar 2026",
+        "description_es": [
           "Migración a React Native; desarrollo de red social inmobiliaria (posts/reels).",
           "Implementación de API de Google Maps para geolocalización, formularios seguros y mensajería RealTime con Supabase.",
           "Optimización de rendimiento (scroll infinito, carga de datos) en un 80%."
+        ],
+        "description_en": [
+          "Migration to React Native; development of real estate social network (posts/reels).",
+          "Implementation of Google Maps API for geolocation, secure forms and RealTime messaging with Supabase.",
+          "Performance optimization (infinite scroll, data loading) by 80%."
         ]
       }
     ]
