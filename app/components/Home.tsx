@@ -12,42 +12,66 @@ import { useLanguageStore } from '../store/store';
 const Home = () => {
   const { t } = useLanguageStore();
 
+  const handleCvClick = () => {
+    window.open('/cv.pdf', '_blank');
+  };
+
   return (
-    <div className="flex flex-col justify-start items-center w-full pb-32">
+    <div className="relative w-full flex flex-col justify-start items-center pb-32 overflow-hidden">
+      {/* Global Background Blobs (subtle variations of neutral background colors) */}
+      <div className="absolute pointer-events-none top-[5%] -right-40 w-250 h-250 rounded-full bg-white/40 dark:bg-[#222222]/30 blur-3xl z-0"></div>
+      <div className="absolute pointer-events-none top-[35%] -left-40 w-160 h-160 rounded-full bg-black/3 dark:bg-white/1.5 blur-3xl z-0"></div>
+      <div className="absolute pointer-events-none top-[70%] -right-32 w-200 h-200 rounded-full bg-white/30 dark:bg-[#101010]/60 blur-3xl z-0"></div>
+
       {/* Sección Inicio */}
       <section
         id="home"
-        className="w-full max-w-5xl flex flex-col gap-5 pt-20 px-5 min-h-[80vh] justify-center"
+        className="w-full max-w-5xl flex flex-col gap-5 pt-20 px-5 min-h-[80vh] justify-center z-10"
       >
-        <div className="cursor-default">
-          <div className="gap-2 efecto_lis_texto">
-            <h5 className="flex text-xl text-center font-light self-start pt-10 text-gray-800 dark:text-gray-200">
-              {t('greeting')}
-            </h5>
-            <div className="flex flex-row items-center gap-2">
-              <Image
-                src="/chevron-r.svg"
-                className="icon-svg dark:invert"
-                alt="chev"
-                width={75}
-                height={75}
-              />
-              <h1 className="text-7xl text-center font-arima text-gray-800 dark:text-gray-200">
-                Fabian Mina
-              </h1>
+        <div className="cursor-default flex flex-row items-center z-10">
+          <div className="flex flex-col">
+            <div className="gap-2 efecto_lis_texto">
+              <h5 className="flex text-xl text-center font-light self-start pt-10 text-gray-800 dark:text-gray-200">
+                {t('greeting')}
+              </h5>
+              <div className="flex flex-row items-center gap-2">
+                <Image
+                  src="/chevron-r.svg"
+                  className="icon-svg dark:invert"
+                  alt="chev"
+                  width={75}
+                  height={75}
+                />
+                <h1 className="text-7xl text-center font-arima font-semibold text-gray-800 dark:text-gray-200">
+                  Fabian Mina
+                </h1>
+              </div>
+            </div>
+            <div className="flex flex-col items-start gap-5 pt-5">
+              <h2 className="text-2xl text-left font-semibold font-mono text-gray-800 dark:text-gray-200">
+                {t('sub_1')}
+              </h2>
+              <h2 className="text-xl text-left font-sans text-gray-800 dark:text-gray-200 max-w-2xl">
+                {t('sub_2')}
+              </h2>
             </div>
           </div>
-          <div className="flex flex-col items-start gap-5 pt-5">
-            <h2 className="text-2xl text-left font-semibold font-mono text-gray-800 dark:text-gray-200">
-              {t('sub_1')}
-            </h2>
-            <h2 className="text-xl text-left font-sans text-gray-800 dark:text-gray-200 max-w-2xl">
-              {t('sub_2')}
-            </h2>
+
+          <div className="flex justify-end items-center efecto_lis_texto">
+            <Image
+              src="/cloud.png"
+              width={500}
+              height={500}
+              alt="cloud"
+              loading="eager"
+            />
           </div>
         </div>
-        <div className="efecto_lis fit-content self-start rounded-xl transition-all duration-200">
-          <button className="flex items-center gap-2 px-5 py-2 bg-gray-800 text-gray-200 rounded-xl cursor-pointer transition-colors duration-200">
+        <div className="efecto_lis fit-content self-start rounded-xl transition-all duration-200 z-10">
+          <button
+            onClick={handleCvClick}
+            className="flex items-center gap-2 px-5 py-2 bg-gray-800 text-gray-200 rounded-xl cursor-pointer transition-colors duration-200"
+          >
             <Image
               src="/doc-arrow-down.svg"
               className="icon-svg invert"
@@ -59,11 +83,10 @@ const Home = () => {
           </button>
         </div>
       </section>
-
       {/* Sección Experiencia */}
       <section
         id="experiencia"
-        className="w-full max-w-5xl flex flex-col gap-10 pt-20 px-5"
+        className="w-full max-w-5xl flex flex-col gap-10 pt-20 px-5 z-10"
       >
         <div className="flex flex-col items-start">
           <div className="gap-2 mb-5 efecto_lis_texto">
@@ -81,11 +104,10 @@ const Home = () => {
           ))}
         </div>
       </section>
-
       {/* Sección Sobre mi */}
       <section
         id="sobre-mi"
-        className="w-full max-w-5xl flex flex-col gap-10 pt-20 px-5"
+        className="w-full max-w-5xl flex flex-col gap-10 pt-20 px-5 z-10"
       >
         <div className="flex items-center gap-4 mb-5">
           <div className="gap-2 mb-5 efecto_lis_texto">
@@ -108,15 +130,13 @@ const Home = () => {
                 {t('about_me_title')}
               </h2>
             </div>
-            <div className="flex items-center">
-              <Image
-                src="/placeholder/profile.jpg"
+            <div className="">
+              <img
+                src="/images/Me.jpeg"
                 alt="Foto"
-                width={150}
-                height={150}
-                className="round-img"
+                className="w-70 h-70 rounded-full object-cover mr-4 image_profile"
               />
-              <div className="flex flex-col ml-4">
+              <div className="">
                 <p className="text-gray-800 font-light text-xl dark:text-gray-200">
                   {t('about_me_text.text1')}{' '}
                   <a
@@ -148,10 +168,9 @@ const Home = () => {
           </div>
         </div>
       </section>
-
       <section
         id="contacto"
-        className="w-full max-w-5xl flex flex-col gap-10 pt-20 px-5"
+        className="w-full max-w-5xl flex flex-col gap-10 pt-20 px-5 z-10"
       >
         <div className="flex items-center gap-4 mb-5">
           <div className="gap-2 mb-5 efecto_lis_texto">

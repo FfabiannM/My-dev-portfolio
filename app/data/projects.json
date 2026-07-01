@@ -52,10 +52,22 @@
     "github_link": "",
     "information": [
       {
-        "puesto": "FullStack Developer",
+        "position_es": "Desarrollador FullStack",
+        "position_en": "FullStack Developer",
         "name": "Gecim",
         "dates": "May 2026 - Act.",
-        "description": []
+        "description_es": [
+          "Diseñé la arquitectura del proyecto usando Next.js y Supabase con el modelado de la base de datos PostgreSQL.",
+          "Implementación de componentes reutilizables además de mapcn para mapas interactivos para visualizar la ubicación de las clínicas y consultorios.",
+          "Proyecto aún en desarrollo, ambientado para mi ciudad, para ser usado en clinicas consultorios y pacientes que lo requieran.",
+          "Será de código abierto."
+        ],
+        "description_en": [
+          "I designed the project architecture using Next.js and Supabase with the PostgreSQL database model.",
+          "Implementation of reusable components in addition to mapcn for interactive maps to visualize the location of clinics and medical offices.",
+          "Project still under development, tailored for my city, for use in clinics, medical offices, and by patients who require it.",
+          "It will be open source."
+        ]
       }
     ]
   }
