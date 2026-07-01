@@ -130,13 +130,21 @@ const Home = () => {
                 {t('about_me_title')}
               </h2>
             </div>
-            <div className="">
-              <img
-                src="/images/Me.jpeg"
-                alt="Foto"
-                className="w-70 h-70 rounded-full object-cover mr-4 image_profile"
-              />
-              <div className="">
+            <div>
+              <div className=" rounded-full image_profile efecto_lis overflow-hidden">
+                <div className="relative w-full h-full">
+                  {/* Imagen inicial */}
+                  <Image
+                    src="/images/Me.jpeg"
+                    alt="Imagen inicial"
+                    fill
+                    className="object-cover transition-all duration-150 hover:scale-110"
+                  />
+
+                  {/* Imagen que aparece en hover */}
+                </div>
+              </div>
+              <div>
                 <p className="text-gray-800 font-light text-xl dark:text-gray-200">
                   {t('about_me_text.text1')}{' '}
                   <a

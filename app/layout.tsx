@@ -1,48 +1,98 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-import Navegator from "./components/Navegator";
-import localFont from "next/font/local";
-import ThemeProvider from "./components/ThemeProvider";
+import type { Metadata } from 'next';
+import { Geist, Geist_Mono } from 'next/font/google';
+import './globals.css';
+import Navegator from './components/Navegator';
+import localFont from 'next/font/local';
+import ThemeProvider from './components/ThemeProvider';
 
 const alata = localFont({
-  src: "../public/fonts/Alata-Regular.ttf",
-  variable: "--font-alata",
+  src: '../public/fonts/Alata-Regular.ttf',
+  variable: '--font-alata',
 });
 
 const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+  variable: '--font-geist-sans',
+  subsets: ['latin'],
 });
 
 const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  variable: '--font-geist-mono',
+  subsets: ['latin'],
 });
 
 export const metadata: Metadata = {
-  title: "Fabian Mina",
-  description: "Informático | Desarrollador de Software",
+  title: 'Fabian Mina',
+  description: 'Informático | Desarrollador de Software',
 };
 
 export const HiddenSVGFilters = () => (
-  <svg style={{ position: 'absolute', width: 0, height: 0, pointerEvents: 'none' }}>
+  <svg
+    style={{ position: 'absolute', width: 0, height: 0, pointerEvents: 'none' }}
+  >
     <defs>
       <filter id="sketch-0">
-        <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="2" result="noise" seed="0" />
-        <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" xChannelSelector="R" yChannelSelector="G" />
+        <feTurbulence
+          type="fractalNoise"
+          baseFrequency="0.03"
+          numOctaves="2"
+          result="noise"
+          seed="0"
+        />
+        <feDisplacementMap
+          in="SourceGraphic"
+          in2="noise"
+          scale="6"
+          xChannelSelector="R"
+          yChannelSelector="G"
+        />
       </filter>
       <filter id="sketch-1">
-        <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="2" result="noise" seed="1" />
-        <feDisplacementMap in="SourceGraphic" in2="noise" scale="7" xChannelSelector="R" yChannelSelector="G" />
+        <feTurbulence
+          type="fractalNoise"
+          baseFrequency="0.05"
+          numOctaves="2"
+          result="noise"
+          seed="1"
+        />
+        <feDisplacementMap
+          in="SourceGraphic"
+          in2="noise"
+          scale="7"
+          xChannelSelector="R"
+          yChannelSelector="G"
+        />
       </filter>
       <filter id="sketch-2">
-        <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="2" result="noise" seed="2" />
-        <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" xChannelSelector="R" yChannelSelector="G" />
+        <feTurbulence
+          type="fractalNoise"
+          baseFrequency="0.04"
+          numOctaves="2"
+          result="noise"
+          seed="2"
+        />
+        <feDisplacementMap
+          in="SourceGraphic"
+          in2="noise"
+          scale="6"
+          xChannelSelector="R"
+          yChannelSelector="G"
+        />
       </filter>
       <filter id="sketch-3">
-        <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="2" result="noise" seed="3" />
-        <feDisplacementMap in="SourceGraphic" in2="noise" scale="8" xChannelSelector="R" yChannelSelector="G" />
+        <feTurbulence
+          type="fractalNoise"
+          baseFrequency="0.03"
+          numOctaves="2"
+          result="noise"
+          seed="3"
+        />
+        <feDisplacementMap
+          in="SourceGraphic"
+          in2="noise"
+          scale="8"
+          xChannelSelector="R"
+          yChannelSelector="G"
+        />
       </filter>
     </defs>
   </svg>
@@ -58,6 +108,9 @@ export default function RootLayout({
       lang="en"
       className={`${alata.variable} ${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
+      <head>
+        <link rel="icon" href="/cloud.png" sizes="any" />
+      </head>
       <body className="min-h-full flex flex-col bg-zinc-50 dark:bg-black text-black dark:text-white transition-colors duration-300">
         <ThemeProvider>
           <HiddenSVGFilters />
